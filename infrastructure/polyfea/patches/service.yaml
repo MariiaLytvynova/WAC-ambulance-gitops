@@ -2,7 +2,9 @@ kind: Service
 apiVersion: v1
 metadata:
   name: polyfea-controller
-  namespace: polyfea
+  namespace: polyfea-wac
+#    namespace: polyfea
+
 spec:
   ports:
   - name: webserver

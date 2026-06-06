@@ -1,0 +1,61 @@
+{
+    "apiVersion": "v1",
+    "kind": "Namespace",
+    "metadata": {
+        "annotations": {
+            "kustomize.toolkit.fluxcd.io/prune": "disabled"
+        },
+        "creationTimestamp": "2026-03-10T22:27:58Z",
+        "deletionTimestamp": "2026-03-16T19:37:56Z",
+        "labels": {
+            "kubernetes.io/metadata.name": "polyfea",
+            "kustomize.toolkit.fluxcd.io/name": "prepare",
+            "kustomize.toolkit.fluxcd.io/namespace": "wac-hospital"
+        },
+        "name": "polyfea",
+        "resourceVersion": "56066",
+        "uid": "537ebf03-fe36-45e7-805e-89e67d53ec6c"
+    },
+    "spec": {
+    },
+    "status": {
+        "conditions": [
+            {
+                "lastTransitionTime": "2026-03-16T19:38:02Z",
+                "message": "All resources successfully discovered",
+                "reason": "ResourcesDiscovered",
+                "status": "False",
+                "type": "NamespaceDeletionDiscoveryFailure"
+            },
+            {
+                "lastTransitionTime": "2026-03-16T19:38:02Z",
+                "message": "All legacy kube types successfully parsed",
+                "reason": "ParsedGroupVersions",
+                "status": "False",
+                "type": "NamespaceDeletionGroupVersionParsingFailure"
+            },
+            {
+                "lastTransitionTime": "2026-03-16T19:38:02Z",
+                "message": "All content successfully deleted, may be waiting on finalization",
+                "reason": "ContentDeleted",
+                "status": "False",
+                "type": "NamespaceDeletionContentFailure"
+            },
+            {
+                "lastTransitionTime": "2026-03-16T19:38:02Z",
+                "message": "Some resources are remaining: webcomponents.polyfea.github.io has 3 resource instances",
+                "reason": "SomeResourcesRemain",
+                "status": "True",
+                "type": "NamespaceContentRemaining"
+            },
+            {
+                "lastTransitionTime": "2026-03-16T19:38:02Z",
+                "message": "Some content in the namespace has finalizers remaining: polyfea.github.io/finalizer in 3 resource instances",
+                "reason": "SomeFinalizersRemain",
+                "status": "True",
+                "type": "NamespaceFinalizersRemaining"
+            }
+        ],
+        "phase": "Terminating"
+    }
+}

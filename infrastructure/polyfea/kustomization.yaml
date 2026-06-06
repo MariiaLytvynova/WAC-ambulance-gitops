@@ -6,7 +6,9 @@ resources:
 
 configMapGenerator:
 - name: polyfea-shell-cfg
-  namespace: polyfea
+  namespace: polyfea-wac
+   # namespace: polyfea
+
   options:
     disableNameSuffixHash: true
   literals:
