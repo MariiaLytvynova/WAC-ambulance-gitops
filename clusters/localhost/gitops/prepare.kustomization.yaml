@@ -1,27 +1,42 @@
+#apiVersion: kustomize.toolkit.fluxcd.io/v1
+#kind: Kustomization
+#metadata:
+ # name: prepare
+  #namespace: wac
+  #namespace: wac-hospital
+
+#spec:
+  # wait: true
+ # healthChecks:
+  #  - apiVersion: apps/v1
+   #   kind: Deployment
+    #  name: envoy-gateway
+     # namespace: envoy-gateway-system
+    #- apiVersion: apps/v1
+     # kind: Deployment
+      #name: polyfea-controller
+      #namespace: polyfea
+      #namespace: polyfea-wac
+
+#  interval: 120s
+ # path: clusters/localhost/prepare
+  #prune: true
+#  sourceRef:
+ #   kind: GitRepository
+  #  name: gitops-repo
+    
+
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
   name: prepare
-  namespace: wac
-  #    namespace: wac-hospital
-
+  namespace: wac-hospital
 spec:
-  # wait: true
-  healthChecks:
-    - apiVersion: apps/v1
-      kind: Deployment
-      name: envoy-gateway
-      namespace: envoy-gateway-system
-    - apiVersion: apps/v1
-      kind: Deployment
-      name: polyfea-controller
-      # namespace: polyfea
-      namespace: polyfea-wac
-
+  wait: true
   interval: 120s
   path: clusters/localhost/prepare
   prune: true
   sourceRef:
     kind: GitRepository
     name: gitops-repo
-    
