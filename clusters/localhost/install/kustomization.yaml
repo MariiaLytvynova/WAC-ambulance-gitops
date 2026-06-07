@@ -11,3 +11,6 @@ labels:
 
 resources:
 - ../../../apps/ml-ambulance
+
+components:
+- ../../../components/version-developers
