@@ -1,14 +1,30 @@
+# apiVersion: polyfea.github.io/v1alpha1
+# kind: WebComponent
+# metadata:
+#   name: ml-ambulance-content
+# spec: #nastavenie komponentu, ktorý sa načíta do hlavného obsahu
+#   microFrontend: ml-ambulance
+#   element: ml-change
+#   attributes:
+#     - name: base-path
+#       value: ml-ambulance-zoznam-pacientov
+#   displayRules:
+#     - allOf:
+#       - context-name: main-content
+#       # - path: "^(\\.?/)?ml-ambulance-zoznam-pacientov(/.*)?$" #ukaze sa len pri url, ktorá obsahuje ml-ambulance-zoznam-pacientov
+
+
+
 apiVersion: polyfea.github.io/v1alpha1
 kind: WebComponent
 metadata:
   name: ml-ambulance-content
-spec: #nastavenie komponentu, ktorý sa načíta do hlavného obsahu
+spec:
   microFrontend: ml-ambulance
   element: ml-change
   attributes:
     - name: base-path
-      value: ml-ambulance-zoznam-pacientov
+      value: /ml-ambulance-zoznam-pacientov/  
   displayRules:
     - allOf:
       - context-name: main-content
-      # - path: "^(\\.?/)?ml-ambulance-zoznam-pacientov(/.*)?$" #ukaze sa len pri url, ktorá obsahuje ml-ambulance-zoznam-pacientov
