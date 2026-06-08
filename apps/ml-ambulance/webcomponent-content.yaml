@@ -24,7 +24,7 @@ spec:
   element: ml-change
   attributes:
     - name: base-path
-      value: /ambulance-wl/  
+      value: ./  
   displayRules:
     - allOf:
       - context-name: main-content
