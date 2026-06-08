@@ -11,4 +11,4 @@ spec: #nastavenie komponentu, ktorý sa načíta do hlavného obsahu
   displayRules:
     - allOf:
       - context-name: main-content
-      # - path: "^(\\.?/)?ml-ambulance-zoznam-pacientov(/.*)?$" #ukaze sa len pri url, ktorá obsahuje ml-ambulance-zoznam-pacientov
+      - path: "^(\\.?/)?ml-ambulance-zoznam-pacientov(/.*)?$" #ukaze sa len pri url, ktorá obsahuje ml-ambulance-zoznam-pacientov
