@@ -23,8 +23,10 @@ spec:
   microFrontend: ml-ambulance
   element: ml-change
   attributes:
+  
     - name: base-path
-      value: ./  
+      value: /ml-ambulance-wl/  
   displayRules:
     - allOf:
       - context-name: main-content
+      - path: "^(\\.?/)?ml-ambulance-wl(/.*)?$" #ukaze sa len pri url, která obsahuje ml-ambulance-wl
