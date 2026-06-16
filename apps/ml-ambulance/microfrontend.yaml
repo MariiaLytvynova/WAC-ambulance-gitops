@@ -9,7 +9,7 @@ spec:
 
   service:
     name: ml-ambulance # referencia na službu odkiaľ sa má načítať modul
-  modulePath: /ambulance-wl/ambulance.esm.js # cesta v rámci služby kde sa modul nachádza
+  modulePath: build/ambulance.esm.js # cesta v rámci služby kde sa modul nachádza
 
 # apiVersion: polyfea.github.io/v1alpha1
 # kind: MicroFrontend
