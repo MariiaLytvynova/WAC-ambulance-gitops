@@ -1,15 +1,15 @@
-kind: Service
-apiVersion: v1
-metadata:
-  name: polyfea-controller
-  #namespace: polyfea-wac
-  namespace: polyfea
+# kind: Service
+# apiVersion: v1
+# metadata:
+#   name: polyfea-controller
+#   #namespace: polyfea-wac
+#   namespace: polyfea
 
-spec:
-  ports:
-  - name: webserver
-    protocol: TCP
-    port: 80
-    targetPort: http
-    nodePort: 30331
-  type: NodePort
+# spec:
+#   ports:
+#   - name: webserver
+#     protocol: TCP
+#     port: 80
+#     targetPort: http
+#     nodePort: 30331
+#   type: NodePort
