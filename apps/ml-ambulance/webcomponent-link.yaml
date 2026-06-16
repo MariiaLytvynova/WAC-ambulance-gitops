@@ -3,8 +3,11 @@ kind: WebComponent
 metadata:
   name: ml-ambulance-link
 spec:
-  microFrontend: polyfea-md-shell # referencia na microfrontend, z ktorého sa načíta element
-  element: polyfea-md-app # element, ktorý bude vložený na stránku
+#  microFrontend: polyfea-md-shell # referencia na microfrontend, z ktorého sa načíta element
+#  element: polyfea-md-app # element, ktorý bude vložený na stránku
+
+  microFrontend: ml-ambulance # referencia na microfrontend, z ktorého sa načíta element
+  element: ml-change # element, ktorý bude vložený na stránku
   attributes: # atribúty elementu polyfea-md-app
     - name: headline
       value: Zoznam pacientov ml

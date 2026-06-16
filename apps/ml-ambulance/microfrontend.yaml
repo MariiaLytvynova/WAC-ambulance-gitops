@@ -3,7 +3,9 @@ kind: MicroFrontend
 metadata:
   name: ml-ambulance
 spec:
-  frontendClass: md-shell # default obsiahnutý v základe polyfea md-shell
+  frontendClass: md-change # default obsiahnutý v základe polyfea md-shell
+#  frontendClass: md-shell # default obsiahnutý v základe polyfea md-shell
+
   service:
     name: ml-ambulance # referencia na službu odkiaľ sa má načítať modul
   modulePath: build/ambulance.esm.js # cesta v rámci služby kde sa modul nachádza
