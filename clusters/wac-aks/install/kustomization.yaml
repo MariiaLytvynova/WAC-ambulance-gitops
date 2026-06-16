@@ -13,6 +13,7 @@ labels:
 resources:
 - ../../../apps/ml-ambulance
 - ../../../apps/ml-ambulance-webapi
+- ../../../apps/ml-ambulance-webapi/kustomization.yaml
 
 components:
 - ../../../components/version-release
