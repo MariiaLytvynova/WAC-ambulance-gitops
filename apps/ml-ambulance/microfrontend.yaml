@@ -9,4 +9,4 @@ spec:
 
   service:
     name: ml-ambulance # referencia na službu odkiaľ sa má načítať modul
-  modulePath: build/ambulance.esm.js # cesta v rámci služby kde sa modul nachádza
+  modulePath: www/build/ambulance.esm.js # cesta v rámci služby kde sa modul nachádza
