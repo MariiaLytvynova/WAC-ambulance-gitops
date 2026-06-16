@@ -11,6 +11,11 @@ labels:
 
 resources:
 - ../../../apps/ml-ambulance
+- ../../../apps/ml-ambulance-webapi
+
+patches:
+- path: patches/ambulance-webapi.service.yaml
 
 components:
 - ../../../components/version-developers
+- https://github.com/MariiaLytvynova/WAC-ambulance-webapi//deployments/kustomize/components/postgres
