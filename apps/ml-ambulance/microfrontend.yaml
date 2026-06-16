@@ -3,7 +3,7 @@ kind: MicroFrontend
 metadata:
   name: ml-ambulance
 spec:
-  frontendClass: polyfea-md-shell # default obsiahnutý v základe polyfea md-shell
+  frontendClass: md-shell # default obsiahnutý v základe polyfea md-shell
 #  frontendClass: md-shell # default obsiahnutý v základe polyfea md-shell
 
 

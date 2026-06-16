@@ -28,7 +28,8 @@ spec:
       value: /ml-ambulance-wl/ 
     - name: api-base
       # value: http://localhost:5000/api
-      value: http://localhost:30081/api
+      # value: http://localhost:30081/api
+      value: /ml-api      
     - name: ambulance-id
       value: bobulova 
   displayRules:
