@@ -33,7 +33,6 @@ labels:
 resources:
 - ../../../apps/ml-ambulance
 - ../../../apps/ml-ambulance-webapi
-# - ../../../apps/ml-ambulance-ufe
 
 patches:
 - path: patches/ambulance-webapi.service.yaml
