@@ -12,7 +12,7 @@ labels:
 
 resources:
 - ../../../apps/ml-ambulance
-
+- ../../../apps/ml-ambulance-webapi
 
 components:
 - ../../../components/version-release
